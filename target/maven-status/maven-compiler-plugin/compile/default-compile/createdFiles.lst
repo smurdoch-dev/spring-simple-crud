@@ -1,0 +1,5 @@
+com/mytutorials/crudspring/repositories/ProductRepository.class
+com/mytutorials/crudspring/controllers/ProductController.class
+com/mytutorials/crudspring/services/ProductService.class
+com/mytutorials/crudspring/entities/Product.class
+com/mytutorials/crudspring/CrudSpringApplication.class
