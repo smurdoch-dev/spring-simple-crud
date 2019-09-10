@@ -5,6 +5,7 @@ import com.mytutorials.crudspring.repositories.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,5 +29,14 @@ public class ProductService {
 
     public void deleteById(Long id){
         productRepository.deleteById(id);
+    }
+
+    public List<String> getProductsName() {
+        List<String> response = new ArrayList<>();
+        List<Product> all = productRepository.findAll();
+        for (Product product : all) {
+            response.add(product.getName());
+        }
+        return response;
     }
 }
